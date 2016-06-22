@@ -1,7 +1,18 @@
-document.observe("dom:loaded", function() {
-    var link = document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'https://ardacraft.github.io/ardacraft/style/images/favicon.png';
-    document.getElementsByTagName('head')[0].appendChild(link);
-});
+function myFunction() {
+  head = document.getElementsByTagName('head');
+  links = head[0].getElementsByTagName('link');
+  for (var i in links) {
+     link = links[i];
+     if (link.getAttribute('rel') == 'shortcut icon') {
+        link.setAttribute('href', 'https://ardacraft.github.io/ardacraft/style/images/favicon.png');
+        break;
+     }
+  }
+};
+var body = document.getElementsByTagName('body');
+if (window.addEventListener) {
+  window.addEventListener('load', myFunction, false);
+}
+else if (window.attachEvent) {
+  window.attachEvent('onload', myFunction );
+}
