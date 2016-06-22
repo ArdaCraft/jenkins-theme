@@ -4,4 +4,4 @@ document.observe("dom:loaded", function() {
     link.rel = 'shortcut icon';
     link.href = 'https://ardacraft.github.io/ardacraft/style/images/favicon.png';
     document.getElementsByTagName('head')[0].appendChild(link);
-};);
+});
