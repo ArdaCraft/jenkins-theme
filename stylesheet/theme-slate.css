@@ -2194,7 +2194,8 @@ a:visited:hover {
 }
 #header #search-box {
     background: #fff;
-    padding-left: 10px
+    padding-left: 10px;
+    width: 175px;
 }
 #breadcrumbBar #breadcrumbs {
     border: 0!important
