@@ -2346,10 +2346,15 @@ pre a {
     filter: brightness(10000)
 }
 #header {
-    background-image: url('https://ardacraft.github.io/jenkins-theme/assets/dev-green.svg');
+    text-transform: initial !important;
+}
+#header .logo {
+    margin: 0px;
+    width: 265px;
+    height: 100%;
+    position: relative;
+    background-image: url(https://ardacraft.github.io/jenkins-theme/assets/dev-green.svg);
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 265px;
 }
 #jenkins-home-link {
     display: none !important
